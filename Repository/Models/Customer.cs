@@ -1,13 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace RolexApplication_DAL.Models
+namespace Repository.Models
 {
     public partial class Customer
     {
         public Customer()
         {
             CartItems = new HashSet<CartItem>();
+            Orders = new HashSet<Order>();
         }
 
         public int CustomerId { get; set; }
@@ -21,5 +22,6 @@ namespace RolexApplication_DAL.Models
         public string? Avatar { get; set; }
 
         public virtual ICollection<CartItem> CartItems { get; set; }
+        public virtual ICollection<Order> Orders { get; set; }
     }
 }

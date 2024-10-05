@@ -3,14 +3,15 @@ using System.Collections.Generic;
 
 namespace Repository.Models
 {
-    public partial class CartItem
+    public partial class OrderDetail
     {
-        public int ItemId { get; set; }
-        public int CustomerId { get; set; }
+        public int OrderDetailId { get; set; }
+        public int OrderId { get; set; }
         public int ProductId { get; set; }
+        public decimal PricePerUnit { get; set; }
         public int Quantity { get; set; }
 
-        public virtual Customer Customer { get; set; } = null!;
+        public virtual Order Order { get; set; } = null!;
         public virtual Product Product { get; set; } = null!;
     }
 }

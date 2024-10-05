@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 
-namespace RolexApplication_DAL.Models
+namespace Repository.Models
 {
     public partial class PokemonDbContext : DbContext
     {
