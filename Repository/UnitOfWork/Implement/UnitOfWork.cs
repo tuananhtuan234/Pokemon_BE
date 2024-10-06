@@ -23,7 +23,8 @@ namespace Repository.UnitOfWork.Implement
         private GenericRepository<Product> _productRepository;
         private GenericRepository<ProductImage> _productImageRepository;
         private GenericRepository<Payment> _paymentRepository;
-        
+        private CartRepository _cartRepository;
+
         public UnitOfWork(PokemonDbContext context)
         {
             this.context = context;
@@ -47,6 +48,18 @@ namespace Repository.UnitOfWork.Implement
         public IGenericRepository<ChatRequest> ChatRequestRepository => _chatRequestRepository ?? new GenericRepository<ChatRequest>(context);
 
         public IGenericRepository<Payment> PaymentRepository => _paymentRepository ?? new GenericRepository<Payment>(context);
+
+        public CartRepository cartRepository
+        {
+            get
+            {
+                if (cartRepository == null)
+                {
+                    _cartRepository = new CartRepository(context);
+                }
+                return _cartRepository;
+            }
+        }
 
         protected virtual void Dispose(bool disposing)
         {

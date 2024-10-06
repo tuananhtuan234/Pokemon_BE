@@ -11,12 +11,20 @@
       "RelativeMoniker": "D:0:0:{56875AF9-1BED-4A92-B8A9-4AC3F5118FDA}|Repository\\Repository.csproj|solutionrelative:repository\\unitofwork\\implement\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{56875AF9-1BED-4A92-B8A9-4AC3F5118FDA}|Repository\\Repository.csproj|d:\\workspace\\pokemon\\repository\\repository\\implement\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56875AF9-1BED-4A92-B8A9-4AC3F5118FDA}|Repository\\Repository.csproj|solutionrelative:repository\\repository\\implement\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{56875AF9-1BED-4A92-B8A9-4AC3F5118FDA}|Repository\\Repository.csproj|d:\\workspace\\pokemon\\repository\\repository\\interface\\igenericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{56875AF9-1BED-4A92-B8A9-4AC3F5118FDA}|Repository\\Repository.csproj|solutionrelative:repository\\repository\\interface\\igenericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{56875AF9-1BED-4A92-B8A9-4AC3F5118FDA}|Repository\\Repository.csproj|d:\\workspace\\pokemon\\repository\\repository\\implement\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{56875AF9-1BED-4A92-B8A9-4AC3F5118FDA}|Repository\\Repository.csproj|solutionrelative:repository\\repository\\implement\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{56875AF9-1BED-4A92-B8A9-4AC3F5118FDA}|Repository\\Repository.csproj|d:\\workspace\\pokemon\\repository\\repository\\interface\\icartrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56875AF9-1BED-4A92-B8A9-4AC3F5118FDA}|Repository\\Repository.csproj|solutionrelative:repository\\repository\\interface\\icartrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56875AF9-1BED-4A92-B8A9-4AC3F5118FDA}|Repository\\Repository.csproj|d:\\workspace\\pokemon\\repository\\repository\\implement\\cartrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56875AF9-1BED-4A92-B8A9-4AC3F5118FDA}|Repository\\Repository.csproj|solutionrelative:repository\\repository\\implement\\cartrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{56875AF9-1BED-4A92-B8A9-4AC3F5118FDA}|Repository\\Repository.csproj|d:\\workspace\\pokemon\\repository\\models\\pokemondbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -78,7 +86,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
@@ -114,13 +122,39 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ICartRepository.cs",
+              "DocumentMoniker": "D:\\Workspace\\Pokemon\\Repository\\Repository\\Interface\\ICartRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\Repository\\Interface\\ICartRepository.cs",
+              "ToolTip": "D:\\Workspace\\Pokemon\\Repository\\Repository\\Interface\\ICartRepository.cs",
+              "RelativeToolTip": "Repository\\Repository\\Interface\\ICartRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-02T14:30:35.489Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CartRepository.cs",
+              "DocumentMoniker": "D:\\Workspace\\Pokemon\\Repository\\Repository\\Implement\\CartRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\Repository\\Implement\\CartRepository.cs",
+              "ToolTip": "D:\\Workspace\\Pokemon\\Repository\\Repository\\Implement\\CartRepository.cs",
+              "RelativeToolTip": "Repository\\Repository\\Implement\\CartRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-02T14:29:40.177Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "IUnitOfWork.cs",
               "DocumentMoniker": "D:\\Workspace\\Pokemon\\Repository\\UnitOfWork\\Interface\\IUnitOfWork.cs",
               "RelativeDocumentMoniker": "Repository\\UnitOfWork\\Interface\\IUnitOfWork.cs",
               "ToolTip": "D:\\Workspace\\Pokemon\\Repository\\UnitOfWork\\Interface\\IUnitOfWork.cs",
               "RelativeToolTip": "Repository\\UnitOfWork\\Interface\\IUnitOfWork.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-02T14:08:53.584Z",
               "EditorCaption": ""
@@ -133,14 +167,14 @@
               "RelativeDocumentMoniker": "Repository\\UnitOfWork\\Implement\\UnitOfWork.cs",
               "ToolTip": "D:\\Workspace\\Pokemon\\Repository\\UnitOfWork\\Implement\\UnitOfWork.cs",
               "RelativeToolTip": "Repository\\UnitOfWork\\Implement\\UnitOfWork.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAAAQwDAAAAB+AAAAAAAAAA==",
+              "ViewState": "AgIAACAAAAAAAAAAAAAQwBkAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-02T14:08:39.869Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "IGenericRepository.cs",
               "DocumentMoniker": "D:\\Workspace\\Pokemon\\Repository\\Repository\\Interface\\IGenericRepository.cs",
               "RelativeDocumentMoniker": "Repository\\Repository\\Interface\\IGenericRepository.cs",
@@ -153,19 +187,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "GenericRepository.cs",
               "DocumentMoniker": "D:\\Workspace\\Pokemon\\Repository\\Repository\\Implement\\GenericRepository.cs",
               "RelativeDocumentMoniker": "Repository\\Repository\\Implement\\GenericRepository.cs",
               "ToolTip": "D:\\Workspace\\Pokemon\\Repository\\Repository\\Implement\\GenericRepository.cs",
               "RelativeToolTip": "Repository\\Repository\\Implement\\GenericRepository.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAqwBEAAAAxAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-02T14:05:49.569Z"
+              "WhenOpened": "2024-11-02T14:05:49.569Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "PokemonDbContextModelSnapshot.cs",
               "DocumentMoniker": "D:\\Workspace\\Pokemon\\Repository\\Migrations\\PokemonDbContextModelSnapshot.cs",
               "RelativeDocumentMoniker": "Repository\\Migrations\\PokemonDbContextModelSnapshot.cs",
@@ -177,7 +212,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "20241102084814_PokemonDB.Designer.cs",
               "DocumentMoniker": "D:\\Workspace\\Pokemon\\Repository\\Migrations\\20241102084814_PokemonDB.Designer.cs",
               "RelativeDocumentMoniker": "Repository\\Migrations\\20241102084814_PokemonDB.Designer.cs",
@@ -189,7 +224,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "ProductImage.cs",
               "DocumentMoniker": "D:\\Workspace\\Pokemon\\Repository\\Models\\ProductImage.cs",
               "RelativeDocumentMoniker": "Repository\\Models\\ProductImage.cs",
@@ -201,7 +236,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "Product.cs",
               "DocumentMoniker": "D:\\Workspace\\Pokemon\\Repository\\Models\\Product.cs",
               "RelativeDocumentMoniker": "Repository\\Models\\Product.cs",
@@ -213,7 +248,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "PokemonDbContext.cs",
               "DocumentMoniker": "D:\\Workspace\\Pokemon\\Repository\\Models\\PokemonDbContext.cs",
               "RelativeDocumentMoniker": "Repository\\Models\\PokemonDbContext.cs",
@@ -225,7 +260,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "Payment.cs",
               "DocumentMoniker": "D:\\Workspace\\Pokemon\\Repository\\Models\\Payment.cs",
               "RelativeDocumentMoniker": "Repository\\Models\\Payment.cs",
@@ -237,7 +272,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "OrderDetail.cs",
               "DocumentMoniker": "D:\\Workspace\\Pokemon\\Repository\\Models\\OrderDetail.cs",
               "RelativeDocumentMoniker": "Repository\\Models\\OrderDetail.cs",
@@ -249,7 +284,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 17,
               "Title": "Order.cs",
               "DocumentMoniker": "D:\\Workspace\\Pokemon\\Repository\\Models\\Order.cs",
               "RelativeDocumentMoniker": "Repository\\Models\\Order.cs",
@@ -261,7 +296,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "Customer.cs",
               "DocumentMoniker": "D:\\Workspace\\Pokemon\\Repository\\Models\\Customer.cs",
               "RelativeDocumentMoniker": "Repository\\Models\\Customer.cs",
@@ -273,7 +308,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "ChatRequest.cs",
               "DocumentMoniker": "D:\\Workspace\\Pokemon\\Repository\\Models\\ChatRequest.cs",
               "RelativeDocumentMoniker": "Repository\\Models\\ChatRequest.cs",
@@ -285,7 +320,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "Category.cs",
               "DocumentMoniker": "D:\\Workspace\\Pokemon\\Repository\\Models\\Category.cs",
               "RelativeDocumentMoniker": "Repository\\Models\\Category.cs",
@@ -297,7 +332,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "CartItem.cs",
               "DocumentMoniker": "D:\\Workspace\\Pokemon\\Repository\\Models\\CartItem.cs",
               "RelativeDocumentMoniker": "Repository\\Models\\CartItem.cs",
@@ -309,7 +344,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 18,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\Workspace\\Pokemon\\Pokemon\\appsettings.json",
               "RelativeDocumentMoniker": "Pokemon\\appsettings.json",

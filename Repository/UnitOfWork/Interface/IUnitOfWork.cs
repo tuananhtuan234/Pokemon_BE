@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore.Storage;
 using Repository.Models;
+using Repository.Repository.Implement;
 using Repository.Repository.Interface;
 using System;
 using System.Collections.Generic;
@@ -21,6 +22,7 @@ namespace Repository.UnitOfWork.Interface
         IGenericRepository<Product> ProductRepository { get; }
         IGenericRepository<ProductImage> ProductImageRepository { get; }
         IGenericRepository<Payment> PaymentRepository { get; }
+        public CartRepository cartRepository { get; }
         Task<IDbContextTransaction> BeginTransactionAsync();
         Task SaveAsync();
     }
