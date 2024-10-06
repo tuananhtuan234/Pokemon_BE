@@ -16,6 +16,11 @@ namespace Repository.UnitOfWork.Interface
         IGenericRepository<ChatRequest> ChatRequestRepository { get; }
         IGenericRepository<Customer> CustomerRepository { get; }
         IGenericRepository<Order> OrderRepository { get; }
+        IGenericRepository<OrderDetail> OrderDetailRepository { get; }
+
+        IGenericRepository<Product> ProductRepository { get; }
+        IGenericRepository<ProductImage> ProductImageRepository { get; }
+        IGenericRepository<Payment> PaymentRepository { get; }
         Task<IDbContextTransaction> BeginTransactionAsync();
         Task SaveAsync();
     }

@@ -12,13 +12,18 @@ using System.Threading.Tasks;
 namespace Repository.UnitOfWork.Implement
 {
     public class UnitOfWork: IUnitOfWork, IDisposable
-    {     
+    {
+        private PokemonDbContext context = new PokemonDbContext();
         private GenericRepository<Customer> _customerRepository;
         private GenericRepository<CartItem> _cartItemRepository;
         private GenericRepository<ChatRequest> _chatRequestRepository;
         private GenericRepository<Category> _categoryRepository;
         private GenericRepository<Order> _orderRepository;
-        private PokemonDbContext context = new PokemonDbContext();
+        private GenericRepository<OrderDetail> _orderDetailRepository;
+        private GenericRepository<Product> _productRepository;
+        private GenericRepository<ProductImage> _productImageRepository;
+        private GenericRepository<Payment> _paymentRepository;
+        
         public UnitOfWork(PokemonDbContext context)
         {
             this.context = context;
@@ -33,7 +38,15 @@ namespace Repository.UnitOfWork.Implement
 
         public IGenericRepository<Order> OrderRepository => _orderRepository ?? new GenericRepository<Order>(context);
 
+        public IGenericRepository<OrderDetail> OrderDetailRepository => _orderDetailRepository ?? new GenericRepository<OrderDetail>(context);
+
+        public IGenericRepository<Product> ProductRepository => _productRepository ?? new GenericRepository<Product>(context);
+
+        public IGenericRepository<ProductImage> ProductImageRepository => _productImageRepository ?? new GenericRepository<ProductImage>(context);
+
         public IGenericRepository<ChatRequest> ChatRequestRepository => _chatRequestRepository ?? new GenericRepository<ChatRequest>(context);
+
+        public IGenericRepository<Payment> PaymentRepository => _paymentRepository ?? new GenericRepository<Payment>(context);
 
         protected virtual void Dispose(bool disposing)
         {
