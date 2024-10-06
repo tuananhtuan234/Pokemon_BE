@@ -1,57 +1,73 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\FA24\\Pokemon_BE\\Pokemon_BE\\",
+  "WorkspaceRootPath": "D:\\Workspace\\Pokemon\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{56875AF9-1BED-4A92-B8A9-4AC3F5118FDA}|Repository\\Repository.csproj|d:\\fa24\\pokemon_be\\pokemon_be\\repository\\migrations\\pokemondbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{56875AF9-1BED-4A92-B8A9-4AC3F5118FDA}|Repository\\Repository.csproj|solutionrelative:repository\\migrations\\pokemondbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{56875AF9-1BED-4A92-B8A9-4AC3F5118FDA}|Repository\\Repository.csproj|d:\\workspace\\pokemon\\repository\\unitofwork\\implement\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56875AF9-1BED-4A92-B8A9-4AC3F5118FDA}|Repository\\Repository.csproj|solutionrelative:repository\\unitofwork\\implement\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{56875AF9-1BED-4A92-B8A9-4AC3F5118FDA}|Repository\\Repository.csproj|d:\\fa24\\pokemon_be\\pokemon_be\\repository\\migrations\\20241102084814_pokemondb.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{56875AF9-1BED-4A92-B8A9-4AC3F5118FDA}|Repository\\Repository.csproj|solutionrelative:repository\\migrations\\20241102084814_pokemondb.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{56875AF9-1BED-4A92-B8A9-4AC3F5118FDA}|Repository\\Repository.csproj|d:\\workspace\\pokemon\\repository\\unitofwork\\interface\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56875AF9-1BED-4A92-B8A9-4AC3F5118FDA}|Repository\\Repository.csproj|solutionrelative:repository\\unitofwork\\interface\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{56875AF9-1BED-4A92-B8A9-4AC3F5118FDA}|Repository\\Repository.csproj|d:\\fa24\\pokemon_be\\pokemon_be\\repository\\models\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{56875AF9-1BED-4A92-B8A9-4AC3F5118FDA}|Repository\\Repository.csproj|solutionrelative:repository\\models\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{56875AF9-1BED-4A92-B8A9-4AC3F5118FDA}|Repository\\Repository.csproj|d:\\workspace\\pokemon\\repository\\repository\\implement\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56875AF9-1BED-4A92-B8A9-4AC3F5118FDA}|Repository\\Repository.csproj|solutionrelative:repository\\repository\\implement\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{56875AF9-1BED-4A92-B8A9-4AC3F5118FDA}|Repository\\Repository.csproj|d:\\fa24\\pokemon_be\\pokemon_be\\repository\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{56875AF9-1BED-4A92-B8A9-4AC3F5118FDA}|Repository\\Repository.csproj|solutionrelative:repository\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{56875AF9-1BED-4A92-B8A9-4AC3F5118FDA}|Repository\\Repository.csproj|d:\\workspace\\pokemon\\repository\\repository\\interface\\igenericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56875AF9-1BED-4A92-B8A9-4AC3F5118FDA}|Repository\\Repository.csproj|solutionrelative:repository\\repository\\interface\\igenericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{56875AF9-1BED-4A92-B8A9-4AC3F5118FDA}|Repository\\Repository.csproj|d:\\fa24\\pokemon_be\\pokemon_be\\repository\\models\\chatrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{56875AF9-1BED-4A92-B8A9-4AC3F5118FDA}|Repository\\Repository.csproj|solutionrelative:repository\\models\\chatrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{56875AF9-1BED-4A92-B8A9-4AC3F5118FDA}|Repository\\Repository.csproj|d:\\fa24\\pokemon_be\\pokemon_be\\repository\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{56875AF9-1BED-4A92-B8A9-4AC3F5118FDA}|Repository\\Repository.csproj|solutionrelative:repository\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{56875AF9-1BED-4A92-B8A9-4AC3F5118FDA}|Repository\\Repository.csproj|d:\\fa24\\pokemon_be\\pokemon_be\\repository\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{56875AF9-1BED-4A92-B8A9-4AC3F5118FDA}|Repository\\Repository.csproj|solutionrelative:repository\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{56875AF9-1BED-4A92-B8A9-4AC3F5118FDA}|Repository\\Repository.csproj|d:\\fa24\\pokemon_be\\pokemon_be\\repository\\models\\orderdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{56875AF9-1BED-4A92-B8A9-4AC3F5118FDA}|Repository\\Repository.csproj|solutionrelative:repository\\models\\orderdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{56875AF9-1BED-4A92-B8A9-4AC3F5118FDA}|Repository\\Repository.csproj|d:\\fa24\\pokemon_be\\pokemon_be\\repository\\models\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{56875AF9-1BED-4A92-B8A9-4AC3F5118FDA}|Repository\\Repository.csproj|solutionrelative:repository\\models\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{56875AF9-1BED-4A92-B8A9-4AC3F5118FDA}|Repository\\Repository.csproj|d:\\fa24\\pokemon_be\\pokemon_be\\repository\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{56875AF9-1BED-4A92-B8A9-4AC3F5118FDA}|Repository\\Repository.csproj|solutionrelative:repository\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{56875AF9-1BED-4A92-B8A9-4AC3F5118FDA}|Repository\\Repository.csproj|d:\\fa24\\pokemon_be\\pokemon_be\\repository\\models\\productimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{56875AF9-1BED-4A92-B8A9-4AC3F5118FDA}|Repository\\Repository.csproj|solutionrelative:repository\\models\\productimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{56875AF9-1BED-4A92-B8A9-4AC3F5118FDA}|Repository\\Repository.csproj|d:\\fa24\\pokemon_be\\pokemon_be\\repository\\models\\pokemondbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{56875AF9-1BED-4A92-B8A9-4AC3F5118FDA}|Repository\\Repository.csproj|d:\\workspace\\pokemon\\repository\\models\\pokemondbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{56875AF9-1BED-4A92-B8A9-4AC3F5118FDA}|Repository\\Repository.csproj|solutionrelative:repository\\models\\pokemondbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{954EF3CF-6D62-4CBE-BC50-3D3661BD3792}|Pokemon\\Pokemon.csproj|d:\\fa24\\pokemon_be\\pokemon_be\\pokemon\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{56875AF9-1BED-4A92-B8A9-4AC3F5118FDA}|Repository\\Repository.csproj|d:\\workspace\\pokemon\\repository\\models\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56875AF9-1BED-4A92-B8A9-4AC3F5118FDA}|Repository\\Repository.csproj|solutionrelative:repository\\models\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56875AF9-1BED-4A92-B8A9-4AC3F5118FDA}|Repository\\Repository.csproj|d:\\workspace\\pokemon\\repository\\models\\orderdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56875AF9-1BED-4A92-B8A9-4AC3F5118FDA}|Repository\\Repository.csproj|solutionrelative:repository\\models\\orderdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56875AF9-1BED-4A92-B8A9-4AC3F5118FDA}|Repository\\Repository.csproj|d:\\workspace\\pokemon\\repository\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56875AF9-1BED-4A92-B8A9-4AC3F5118FDA}|Repository\\Repository.csproj|solutionrelative:repository\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56875AF9-1BED-4A92-B8A9-4AC3F5118FDA}|Repository\\Repository.csproj|d:\\workspace\\pokemon\\repository\\models\\chatrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56875AF9-1BED-4A92-B8A9-4AC3F5118FDA}|Repository\\Repository.csproj|solutionrelative:repository\\models\\chatrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56875AF9-1BED-4A92-B8A9-4AC3F5118FDA}|Repository\\Repository.csproj|d:\\workspace\\pokemon\\repository\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56875AF9-1BED-4A92-B8A9-4AC3F5118FDA}|Repository\\Repository.csproj|solutionrelative:repository\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56875AF9-1BED-4A92-B8A9-4AC3F5118FDA}|Repository\\Repository.csproj|d:\\workspace\\pokemon\\repository\\models\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56875AF9-1BED-4A92-B8A9-4AC3F5118FDA}|Repository\\Repository.csproj|solutionrelative:repository\\models\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56875AF9-1BED-4A92-B8A9-4AC3F5118FDA}|Repository\\Repository.csproj|d:\\workspace\\pokemon\\repository\\migrations\\pokemondbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56875AF9-1BED-4A92-B8A9-4AC3F5118FDA}|Repository\\Repository.csproj|solutionrelative:repository\\migrations\\pokemondbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56875AF9-1BED-4A92-B8A9-4AC3F5118FDA}|Repository\\Repository.csproj|d:\\workspace\\pokemon\\repository\\migrations\\20241102084814_pokemondb.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56875AF9-1BED-4A92-B8A9-4AC3F5118FDA}|Repository\\Repository.csproj|solutionrelative:repository\\migrations\\20241102084814_pokemondb.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56875AF9-1BED-4A92-B8A9-4AC3F5118FDA}|Repository\\Repository.csproj|d:\\workspace\\pokemon\\repository\\models\\productimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56875AF9-1BED-4A92-B8A9-4AC3F5118FDA}|Repository\\Repository.csproj|solutionrelative:repository\\models\\productimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56875AF9-1BED-4A92-B8A9-4AC3F5118FDA}|Repository\\Repository.csproj|d:\\workspace\\pokemon\\repository\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56875AF9-1BED-4A92-B8A9-4AC3F5118FDA}|Repository\\Repository.csproj|solutionrelative:repository\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56875AF9-1BED-4A92-B8A9-4AC3F5118FDA}|Repository\\Repository.csproj|d:\\workspace\\pokemon\\repository\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56875AF9-1BED-4A92-B8A9-4AC3F5118FDA}|Repository\\Repository.csproj|solutionrelative:repository\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{954EF3CF-6D62-4CBE-BC50-3D3661BD3792}|Pokemon\\Pokemon.csproj|d:\\workspace\\pokemon\\pokemon\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{954EF3CF-6D62-4CBE-BC50-3D3661BD3792}|Pokemon\\Pokemon.csproj|solutionrelative:pokemon\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
@@ -62,15 +78,99 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 9,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IUnitOfWork.cs",
+              "DocumentMoniker": "D:\\Workspace\\Pokemon\\Repository\\UnitOfWork\\Interface\\IUnitOfWork.cs",
+              "RelativeDocumentMoniker": "Repository\\UnitOfWork\\Interface\\IUnitOfWork.cs",
+              "ToolTip": "D:\\Workspace\\Pokemon\\Repository\\UnitOfWork\\Interface\\IUnitOfWork.cs",
+              "RelativeToolTip": "Repository\\UnitOfWork\\Interface\\IUnitOfWork.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-02T14:08:53.584Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "UnitOfWork.cs",
+              "DocumentMoniker": "D:\\Workspace\\Pokemon\\Repository\\UnitOfWork\\Implement\\UnitOfWork.cs",
+              "RelativeDocumentMoniker": "Repository\\UnitOfWork\\Implement\\UnitOfWork.cs",
+              "ToolTip": "D:\\Workspace\\Pokemon\\Repository\\UnitOfWork\\Implement\\UnitOfWork.cs",
+              "RelativeToolTip": "Repository\\UnitOfWork\\Implement\\UnitOfWork.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAQwA0AAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-02T14:08:39.869Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IGenericRepository.cs",
+              "DocumentMoniker": "D:\\Workspace\\Pokemon\\Repository\\Repository\\Interface\\IGenericRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\Repository\\Interface\\IGenericRepository.cs",
+              "ToolTip": "D:\\Workspace\\Pokemon\\Repository\\Repository\\Interface\\IGenericRepository.cs",
+              "RelativeToolTip": "Repository\\Repository\\Interface\\IGenericRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-02T14:06:03.246Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GenericRepository.cs",
+              "DocumentMoniker": "D:\\Workspace\\Pokemon\\Repository\\Repository\\Implement\\GenericRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\Repository\\Implement\\GenericRepository.cs",
+              "ToolTip": "D:\\Workspace\\Pokemon\\Repository\\Repository\\Implement\\GenericRepository.cs",
+              "RelativeToolTip": "Repository\\Repository\\Implement\\GenericRepository.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAA9wBEAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-02T14:05:49.569Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "PokemonDbContextModelSnapshot.cs",
-              "DocumentMoniker": "D:\\FA24\\Pokemon_BE\\Pokemon_BE\\Repository\\Migrations\\PokemonDbContextModelSnapshot.cs",
+              "DocumentMoniker": "D:\\Workspace\\Pokemon\\Repository\\Migrations\\PokemonDbContextModelSnapshot.cs",
               "RelativeDocumentMoniker": "Repository\\Migrations\\PokemonDbContextModelSnapshot.cs",
-              "ToolTip": "D:\\FA24\\Pokemon_BE\\Pokemon_BE\\Repository\\Migrations\\PokemonDbContextModelSnapshot.cs",
+              "ToolTip": "D:\\Workspace\\Pokemon\\Repository\\Migrations\\PokemonDbContextModelSnapshot.cs",
               "RelativeToolTip": "Repository\\Migrations\\PokemonDbContextModelSnapshot.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -79,76 +179,73 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 12,
               "Title": "20241102084814_PokemonDB.Designer.cs",
-              "DocumentMoniker": "D:\\FA24\\Pokemon_BE\\Pokemon_BE\\Repository\\Migrations\\20241102084814_PokemonDB.Designer.cs",
+              "DocumentMoniker": "D:\\Workspace\\Pokemon\\Repository\\Migrations\\20241102084814_PokemonDB.Designer.cs",
               "RelativeDocumentMoniker": "Repository\\Migrations\\20241102084814_PokemonDB.Designer.cs",
-              "ToolTip": "D:\\FA24\\Pokemon_BE\\Pokemon_BE\\Repository\\Migrations\\20241102084814_PokemonDB.Designer.cs",
+              "ToolTip": "D:\\Workspace\\Pokemon\\Repository\\Migrations\\20241102084814_PokemonDB.Designer.cs",
               "RelativeToolTip": "Repository\\Migrations\\20241102084814_PokemonDB.Designer.cs",
               "ViewState": "AgIAABkAAAAAAAAAAAA2wAsAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-02T13:52:14.725Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-02T13:52:14.725Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 13,
               "Title": "ProductImage.cs",
-              "DocumentMoniker": "D:\\FA24\\Pokemon_BE\\Pokemon_BE\\Repository\\Models\\ProductImage.cs",
+              "DocumentMoniker": "D:\\Workspace\\Pokemon\\Repository\\Models\\ProductImage.cs",
               "RelativeDocumentMoniker": "Repository\\Models\\ProductImage.cs",
-              "ToolTip": "D:\\FA24\\Pokemon_BE\\Pokemon_BE\\Repository\\Models\\ProductImage.cs",
+              "ToolTip": "D:\\Workspace\\Pokemon\\Repository\\Models\\ProductImage.cs",
               "RelativeToolTip": "Repository\\Models\\ProductImage.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-02T13:49:31.145Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-02T13:49:31.145Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 14,
               "Title": "Product.cs",
-              "DocumentMoniker": "D:\\FA24\\Pokemon_BE\\Pokemon_BE\\Repository\\Models\\Product.cs",
+              "DocumentMoniker": "D:\\Workspace\\Pokemon\\Repository\\Models\\Product.cs",
               "RelativeDocumentMoniker": "Repository\\Models\\Product.cs",
-              "ToolTip": "D:\\FA24\\Pokemon_BE\\Pokemon_BE\\Repository\\Models\\Product.cs",
+              "ToolTip": "D:\\Workspace\\Pokemon\\Repository\\Models\\Product.cs",
               "RelativeToolTip": "Repository\\Models\\Product.cs",
               "ViewState": "AgIAAAIAAAAAAAAAAAAAABoAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-02T13:49:24.016Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-02T13:49:24.016Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 4,
               "Title": "PokemonDbContext.cs",
-              "DocumentMoniker": "D:\\FA24\\Pokemon_BE\\Pokemon_BE\\Repository\\Models\\PokemonDbContext.cs",
+              "DocumentMoniker": "D:\\Workspace\\Pokemon\\Repository\\Models\\PokemonDbContext.cs",
               "RelativeDocumentMoniker": "Repository\\Models\\PokemonDbContext.cs",
-              "ToolTip": "D:\\FA24\\Pokemon_BE\\Pokemon_BE\\Repository\\Models\\PokemonDbContext.cs",
+              "ToolTip": "D:\\Workspace\\Pokemon\\Repository\\Models\\PokemonDbContext.cs",
               "RelativeToolTip": "Repository\\Models\\PokemonDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-02T13:49:22.893Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 5,
               "Title": "Payment.cs",
-              "DocumentMoniker": "D:\\FA24\\Pokemon_BE\\Pokemon_BE\\Repository\\Models\\Payment.cs",
+              "DocumentMoniker": "D:\\Workspace\\Pokemon\\Repository\\Models\\Payment.cs",
               "RelativeDocumentMoniker": "Repository\\Models\\Payment.cs",
-              "ToolTip": "D:\\FA24\\Pokemon_BE\\Pokemon_BE\\Repository\\Models\\Payment.cs",
+              "ToolTip": "D:\\Workspace\\Pokemon\\Repository\\Models\\Payment.cs",
               "RelativeToolTip": "Repository\\Models\\Payment.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAIBAwAQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAoAAAAAAAAAAAA9wAQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-02T13:49:20.325Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 6,
               "Title": "OrderDetail.cs",
-              "DocumentMoniker": "D:\\FA24\\Pokemon_BE\\Pokemon_BE\\Repository\\Models\\OrderDetail.cs",
+              "DocumentMoniker": "D:\\Workspace\\Pokemon\\Repository\\Models\\OrderDetail.cs",
               "RelativeDocumentMoniker": "Repository\\Models\\OrderDetail.cs",
-              "ToolTip": "D:\\FA24\\Pokemon_BE\\Pokemon_BE\\Repository\\Models\\OrderDetail.cs",
+              "ToolTip": "D:\\Workspace\\Pokemon\\Repository\\Models\\OrderDetail.cs",
               "RelativeToolTip": "Repository\\Models\\OrderDetail.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -157,37 +254,36 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 15,
               "Title": "Order.cs",
-              "DocumentMoniker": "D:\\FA24\\Pokemon_BE\\Pokemon_BE\\Repository\\Models\\Order.cs",
+              "DocumentMoniker": "D:\\Workspace\\Pokemon\\Repository\\Models\\Order.cs",
               "RelativeDocumentMoniker": "Repository\\Models\\Order.cs",
-              "ToolTip": "D:\\FA24\\Pokemon_BE\\Pokemon_BE\\Repository\\Models\\Order.cs",
+              "ToolTip": "D:\\Workspace\\Pokemon\\Repository\\Models\\Order.cs",
               "RelativeToolTip": "Repository\\Models\\Order.cs",
               "ViewState": "AgIAAAoAAAAAAAAAAAA2wAQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-02T13:48:07.541Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-02T13:48:07.541Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "Customer.cs",
-              "DocumentMoniker": "D:\\FA24\\Pokemon_BE\\Pokemon_BE\\Repository\\Models\\Customer.cs",
+              "DocumentMoniker": "D:\\Workspace\\Pokemon\\Repository\\Models\\Customer.cs",
               "RelativeDocumentMoniker": "Repository\\Models\\Customer.cs",
-              "ToolTip": "D:\\FA24\\Pokemon_BE\\Pokemon_BE\\Repository\\Models\\Customer.cs",
+              "ToolTip": "D:\\Workspace\\Pokemon\\Repository\\Models\\Customer.cs",
               "RelativeToolTip": "Repository\\Models\\Customer.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAA3wBkAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAYwBkAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-02T13:49:07.435Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "ChatRequest.cs",
-              "DocumentMoniker": "D:\\FA24\\Pokemon_BE\\Pokemon_BE\\Repository\\Models\\ChatRequest.cs",
+              "DocumentMoniker": "D:\\Workspace\\Pokemon\\Repository\\Models\\ChatRequest.cs",
               "RelativeDocumentMoniker": "Repository\\Models\\ChatRequest.cs",
-              "ToolTip": "D:\\FA24\\Pokemon_BE\\Pokemon_BE\\Repository\\Models\\ChatRequest.cs",
+              "ToolTip": "D:\\Workspace\\Pokemon\\Repository\\Models\\ChatRequest.cs",
               "RelativeToolTip": "Repository\\Models\\ChatRequest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -196,11 +292,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 9,
               "Title": "Category.cs",
-              "DocumentMoniker": "D:\\FA24\\Pokemon_BE\\Pokemon_BE\\Repository\\Models\\Category.cs",
+              "DocumentMoniker": "D:\\Workspace\\Pokemon\\Repository\\Models\\Category.cs",
               "RelativeDocumentMoniker": "Repository\\Models\\Category.cs",
-              "ToolTip": "D:\\FA24\\Pokemon_BE\\Pokemon_BE\\Repository\\Models\\Category.cs",
+              "ToolTip": "D:\\Workspace\\Pokemon\\Repository\\Models\\Category.cs",
               "RelativeToolTip": "Repository\\Models\\Category.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -209,29 +305,52 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 10,
               "Title": "CartItem.cs",
-              "DocumentMoniker": "D:\\FA24\\Pokemon_BE\\Pokemon_BE\\Repository\\Models\\CartItem.cs",
+              "DocumentMoniker": "D:\\Workspace\\Pokemon\\Repository\\Models\\CartItem.cs",
               "RelativeDocumentMoniker": "Repository\\Models\\CartItem.cs",
-              "ToolTip": "D:\\FA24\\Pokemon_BE\\Pokemon_BE\\Repository\\Models\\CartItem.cs",
+              "ToolTip": "D:\\Workspace\\Pokemon\\Repository\\Models\\CartItem.cs",
               "RelativeToolTip": "Repository\\Models\\CartItem.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAA3wAwAAAAXAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-02T13:48:10.189Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 16,
               "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\FA24\\Pokemon_BE\\Pokemon_BE\\Pokemon\\appsettings.json",
+              "DocumentMoniker": "D:\\Workspace\\Pokemon\\Pokemon\\appsettings.json",
               "RelativeDocumentMoniker": "Pokemon\\appsettings.json",
-              "ToolTip": "D:\\FA24\\Pokemon_BE\\Pokemon_BE\\Pokemon\\appsettings.json",
+              "ToolTip": "D:\\Workspace\\Pokemon\\Pokemon\\appsettings.json",
               "RelativeToolTip": "Pokemon\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-11-02T08:48:25.824Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-02T08:48:25.824Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 78,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
             }
           ]
         }
