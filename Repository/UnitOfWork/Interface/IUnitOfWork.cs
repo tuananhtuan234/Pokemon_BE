@@ -11,6 +11,11 @@ namespace Repository.UnitOfWork.Interface
 {
     public interface IUnitOfWork : IDisposable
     {
+        IGenericRepository<CartItem> CartItemRepository { get; }
+        IGenericRepository<Category> CategoryRepository { get; }
+        IGenericRepository<ChatRequest> ChatRequestRepository { get; }
+        IGenericRepository<Customer> CustomerRepository { get; }
+        IGenericRepository<Order> OrderRepository { get; }
         Task<IDbContextTransaction> BeginTransactionAsync();
         Task SaveAsync();
     }
