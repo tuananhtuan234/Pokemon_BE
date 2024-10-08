@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Repository
-build_property.ProjectDir = D:\Workspace\Pokemon\Repository\
+build_property.ProjectDir = D:\FA24\Pokemon_BE\Pokemon_BE\Repository\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
