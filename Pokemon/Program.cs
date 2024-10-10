@@ -67,13 +67,9 @@ builder.Services.AddDbContext<PokemonDbContext>(options => options.UseSqlServer(
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 
 builder.Services.AddScoped<IAuthService, AuthService>();
-//builder.Services.AddScoped<ICustomerService, CustomerService>();
-//builder.Services.AddScoped<ICategoryService, CategoryService>();
-//builder.Services.AddScoped<IProductService, ProductService>();
-//builder.Services.AddScoped<ICartItemService, CartItemService>();
+
 builder.Services.AddScoped<IMessageService, MessageService>();
 builder.Services.AddScoped<IOrderService, OrderService>();
-//builder.Services.AddScoped<IPaymentService, PaymentService>();
 
 builder.Services.AddAutoMapper(typeof(Program), typeof(Mapping));
 
