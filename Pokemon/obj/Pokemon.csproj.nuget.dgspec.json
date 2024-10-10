@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "D:\\FA24\\Pokemon_BE\\Pokemon_BE\\Pokemon\\Pokemon.csproj": {}
+    "D:\\Workspace\\Pokemon\\Pokemon\\Pokemon.csproj": {}
   },
   "projects": {
-    "D:\\FA24\\Pokemon_BE\\Pokemon_BE\\Pokemon\\Pokemon.csproj": {
+    "D:\\Workspace\\Pokemon\\Pokemon\\Pokemon.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\FA24\\Pokemon_BE\\Pokemon_BE\\Pokemon\\Pokemon.csproj",
+        "projectUniqueName": "D:\\Workspace\\Pokemon\\Pokemon\\Pokemon.csproj",
         "projectName": "Pokemon",
-        "projectPath": "D:\\FA24\\Pokemon_BE\\Pokemon_BE\\Pokemon\\Pokemon.csproj",
-        "packagesPath": "C:\\Users\\haoha\\.nuget\\packages\\",
-        "outputPath": "D:\\FA24\\Pokemon_BE\\Pokemon_BE\\Pokemon\\obj\\",
+        "projectPath": "D:\\Workspace\\Pokemon\\Pokemon\\Pokemon.csproj",
+        "packagesPath": "C:\\Users\\Tuan Anh's PC\\.nuget\\packages\\",
+        "outputPath": "D:\\Workspace\\Pokemon\\Pokemon\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\haoha\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Tuan Anh's PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -29,11 +33,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\FA24\\Pokemon_BE\\Pokemon_BE\\Repository\\Repository.csproj": {
-                "projectPath": "D:\\FA24\\Pokemon_BE\\Pokemon_BE\\Repository\\Repository.csproj"
+              "D:\\Workspace\\Pokemon\\Repository\\Repository.csproj": {
+                "projectPath": "D:\\Workspace\\Pokemon\\Repository\\Repository.csproj"
               },
-              "D:\\FA24\\Pokemon_BE\\Pokemon_BE\\Services\\Services.csproj": {
-                "projectPath": "D:\\FA24\\Pokemon_BE\\Pokemon_BE\\Services\\Services.csproj"
+              "D:\\Workspace\\Pokemon\\Services\\Services.csproj": {
+                "projectPath": "D:\\Workspace\\Pokemon\\Services\\Services.csproj"
               }
             }
           }
@@ -53,6 +57,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[8.0.10, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.6.2, )"
@@ -81,17 +89,21 @@
         }
       }
     },
-    "D:\\FA24\\Pokemon_BE\\Pokemon_BE\\Repository\\Repository.csproj": {
+    "D:\\Workspace\\Pokemon\\Repository\\Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\FA24\\Pokemon_BE\\Pokemon_BE\\Repository\\Repository.csproj",
+        "projectUniqueName": "D:\\Workspace\\Pokemon\\Repository\\Repository.csproj",
         "projectName": "Repository",
-        "projectPath": "D:\\FA24\\Pokemon_BE\\Pokemon_BE\\Repository\\Repository.csproj",
-        "packagesPath": "C:\\Users\\haoha\\.nuget\\packages\\",
-        "outputPath": "D:\\FA24\\Pokemon_BE\\Pokemon_BE\\Repository\\obj\\",
+        "projectPath": "D:\\Workspace\\Pokemon\\Repository\\Repository.csproj",
+        "packagesPath": "C:\\Users\\Tuan Anh's PC\\.nuget\\packages\\",
+        "outputPath": "D:\\Workspace\\Pokemon\\Repository\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\haoha\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Tuan Anh's PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -131,25 +143,25 @@
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[6.0.31, )"
+              "version": "[8.0.0, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[6.0.31, )"
+              "version": "[8.0.0, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[6.0.31, )"
+              "version": "[8.0.0, )"
             },
             "Microsoft.Extensions.Configuration": {
               "target": "Package",
-              "version": "[6.0.1, )"
+              "version": "[8.0.0, )"
             },
             "Microsoft.Extensions.Configuration.Json": {
               "target": "Package",
-              "version": "[6.0.0, )"
+              "version": "[8.0.0, )"
             }
           },
           "imports": [
@@ -172,17 +184,21 @@
         }
       }
     },
-    "D:\\FA24\\Pokemon_BE\\Pokemon_BE\\Services\\Services.csproj": {
+    "D:\\Workspace\\Pokemon\\Services\\Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\FA24\\Pokemon_BE\\Pokemon_BE\\Services\\Services.csproj",
+        "projectUniqueName": "D:\\Workspace\\Pokemon\\Services\\Services.csproj",
         "projectName": "Services",
-        "projectPath": "D:\\FA24\\Pokemon_BE\\Pokemon_BE\\Services\\Services.csproj",
-        "packagesPath": "C:\\Users\\haoha\\.nuget\\packages\\",
-        "outputPath": "D:\\FA24\\Pokemon_BE\\Pokemon_BE\\Services\\obj\\",
+        "projectPath": "D:\\Workspace\\Pokemon\\Services\\Services.csproj",
+        "packagesPath": "C:\\Users\\Tuan Anh's PC\\.nuget\\packages\\",
+        "outputPath": "D:\\Workspace\\Pokemon\\Services\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\haoha\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Tuan Anh's PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -197,8 +213,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\FA24\\Pokemon_BE\\Pokemon_BE\\Repository\\Repository.csproj": {
-                "projectPath": "D:\\FA24\\Pokemon_BE\\Pokemon_BE\\Repository\\Repository.csproj"
+              "D:\\Workspace\\Pokemon\\Repository\\Repository.csproj": {
+                "projectPath": "D:\\Workspace\\Pokemon\\Repository\\Repository.csproj"
               }
             }
           }
