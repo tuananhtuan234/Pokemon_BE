@@ -17,6 +17,7 @@ namespace Services.Mapper
             CreateMap<ChatRequest, MessageDtoResponse>().ReverseMap();
             CreateMap<Order, OrderDtoResponse>().ReverseMap();
             CreateMap<OrderDetail, OrderDetailDtoResponse>().ReverseMap();
+            CreateMap<Payment, PaymentResponse>().ReverseMap();
         }
     }
 }
