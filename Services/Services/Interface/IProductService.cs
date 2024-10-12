@@ -15,6 +15,7 @@ namespace Services.Services.Interface
 
         Task<List<ProductDtoResponse>> GetAllProducts(int CategoryId);
 
+        Task<(bool check, List<string>? oldImagePaths)> UpdateProduct(ProductDtoRequest request, List<string> imagePaths, int id);
         Task<ProductDtoResponse> GetProductByID(int id);
 
         Task<int> StatusProduct(int id);

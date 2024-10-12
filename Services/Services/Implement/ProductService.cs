@@ -262,75 +262,75 @@ namespace Services.Services.Implement
                 throw new Exception(ex.Message);
             }
 
-            //}
-
-            //public async Task<(bool check, List<string>? oldImagePaths)> UpdateProduct(ProductDtoRequest request, List<string> imagePaths, int id)
-            //{
-            //    using (var transaction = await _unitOfWork.BeginTransactionAsync())
-            //    {
-            //        try
-            //        {
-            //            bool status = false;
-            //            var checkCategory = _unitOfWork.CategoryRepository.GetByIDAsync(request.CategoryId);
-            //            if (checkCategory != null)
-            //            {
-            //                var checkProduct = await _unitOfWork.ProductRepository.GetByIDAsync(id);
-            //                if (checkProduct != null)
-            //                {
-            //                    var product = _mapper.Map(request, checkProduct);
-            //                    await _unitOfWork.ProductRepository.UpdateAsync(product);
-            //                    await _unitOfWork.SaveAsync();
-            //                    var currentImagePaths = new List<string>();
-
-            //                    var currentImages = await _unitOfWork.ProductImageRepository.GetAsync(p => p.ProductId == checkProduct.ProductId);
-            //                    if (currentImages.Any())
-            //                    {
-            //                        foreach (var image in currentImages)
-            //                        {
-            //                            await _unitOfWork.ProductImageRepository.DeleteAsync(image);
-            //                            await _unitOfWork.SaveAsync();
-            //                            currentImagePaths.Add(image.ImagePath);
-            //                        }
-            //                    }
-
-            //                    if (imagePaths.Any())
-            //                    {
-            //                        foreach (var imagePath in imagePaths)
-            //                        {
-            //                            if (!String.IsNullOrEmpty(imagePath))
-            //                            {
-            //                                var image = new ProductImage
-            //                                {
-            //                                    ProductId = checkProduct.ProductId,
-            //                                    ImagePath = imagePath
-            //                                };
-            //                                await _unitOfWork.ProductImageRepository.InsertAsync(image);
-            //                                await _unitOfWork.SaveAsync();
-            //                            }
-            //                        }
-            //                    }
-
-            //                    status = true;
-            //                    await transaction.CommitAsync();
-            //                    return (status, currentImagePaths);
-            //                }
-            //                else
-            //                {
-            //                    return (status, null);
-            //                }
-            //            }
-            //            else
-            //            {
-            //                return (status, null);
-            //            }
-
-            //        }
-            //        catch (Exception ex)
-            //        {
-            //            await transaction.RollbackAsync();
-            //            throw new Exception(ex.Message);
-            //        }
-            //    }
-            //}
         }
+
+        public async Task<(bool check, List<string>? oldImagePaths)> UpdateProduct(ProductDtoRequest request, List<string> imagePaths, int id)
+        {
+            using (var transaction = await _unitOfWork.BeginTransactionAsync())
+            {
+                try
+                {
+                    bool status = false;
+                    var checkCategory = _unitOfWork.CategoryRepository.GetByIDAsync(request.CategoryId);
+                    if (checkCategory != null)
+                    {
+                        var checkProduct = await _unitOfWork.ProductRepository.GetByIDAsync(id);
+                        if (checkProduct != null)
+                        {
+                            var product = _mapper.Map(request, checkProduct);
+                            await _unitOfWork.ProductRepository.UpdateAsync(product);
+                            await _unitOfWork.SaveAsync();
+                            var currentImagePaths = new List<string>();
+
+                            var currentImages = await _unitOfWork.ProductImageRepository.GetAsync(p => p.ProductId == checkProduct.ProductId);
+                            if (currentImages.Any())
+                            {
+                                foreach (var image in currentImages)
+                                {
+                                    await _unitOfWork.ProductImageRepository.DeleteAsync(image);
+                                    await _unitOfWork.SaveAsync();
+                                    currentImagePaths.Add(image.ImagePath);
+                                }
+                            }
+
+                            if (imagePaths.Any())
+                            {
+                                foreach (var imagePath in imagePaths)
+                                {
+                                    if (!String.IsNullOrEmpty(imagePath))
+                                    {
+                                        var image = new ProductImage
+                                        {
+                                            ProductId = checkProduct.ProductId,
+                                            ImagePath = imagePath
+                                        };
+                                        await _unitOfWork.ProductImageRepository.InsertAsync(image);
+                                        await _unitOfWork.SaveAsync();
+                                    }
+                                }
+                            }
+
+                            status = true;
+                            await transaction.CommitAsync();
+                            return (status, currentImagePaths);
+                        }
+                        else
+                        {
+                            return (status, null);
+                        }
+                    }
+                    else
+                    {
+                        return (status, null);
+                    }
+
+                }
+                catch (Exception ex)
+                {
+                    await transaction.RollbackAsync();
+                    throw new Exception(ex.Message);
+                }
+            }
+        }
+    }
 }
