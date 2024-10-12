@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using Repository.Models;
 using Repository.UnitOfWork.Interface;
+using Services.ModelView;
 using Services.Services.Interface;
 using System;
 using System.Collections.Generic;
@@ -106,118 +107,118 @@ namespace Services.Services.Implement
             }
         }
 
-        //public async Task<List<ProductDtoResponse>> GetAllProducts(int CategoryId)
-        //{
-        //    try
-        //    {
-        //        var products = new List<Product>();
-        //        if (CategoryId == 0)
-        //        {
-        //            products = (await _unitOfWork.ProductRepository.GetAsync(p => p.Status == 1)).ToList();
-        //        }
-        //        else
-        //        {
-        //            products = (await _unitOfWork.ProductRepository.GetAsync(p => p.Status == 1 && p.CategoryId == CategoryId)).ToList();
-        //        }
-        //        if (products.Any())
-        //        {
-        //            List<ProductDtoResponse> list = new List<ProductDtoResponse>();
-        //            foreach (var product in products)
-        //            {
-        //                var productView = _mapper.Map<ProductDtoResponse>(product);
-        //                var productImages = (await _unitOfWork.ProductImageRepository.GetAsync(p => p.ProductId == product.ProductId)).FirstOrDefault();
-        //                if (productImages != null)
-        //                {
-        //                    var imageView = new ProductImageView
-        //                    {
-        //                        Base64StringImage = productImages.ImagePath
-        //                    };
-        //                    productView.Images.Add(imageView);
-        //                }
-        //                list.Add(productView);
-        //            }
-        //            return list;
-        //        }
-        //        else
-        //        {
-        //            return null;
-        //        }
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        throw new Exception(ex.Message);
-        //    }
+        public async Task<List<ProductDtoResponse>> GetAllProducts(int CategoryId)
+        {
+            try
+            {
+                var products = new List<Product>();
+                if (CategoryId == 0)
+                {
+                    products = (await _unitOfWork.ProductRepository.GetAsync(p => p.Status == 1)).ToList();
+                }
+                else
+                {
+                    products = (await _unitOfWork.ProductRepository.GetAsync(p => p.Status == 1 && p.CategoryId == CategoryId)).ToList();
+                }
+                if (products.Any())
+                {
+                    List<ProductDtoResponse> list = new List<ProductDtoResponse>();
+                    foreach (var product in products)
+                    {
+                        var productView = _mapper.Map<ProductDtoResponse>(product);
+                        var productImages = (await _unitOfWork.ProductImageRepository.GetAsync(p => p.ProductId == product.ProductId)).FirstOrDefault();
+                        if (productImages != null)
+                        {
+                            var imageView = new ProductImageView
+                            {
+                                Base64StringImage = productImages.ImagePath
+                            };
+                            productView.Images.Add(imageView);
+                        }
+                        list.Add(productView);
+                    }
+                    return list;
+                }
+                else
+                {
+                    return null;
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
 
-        //}
+        }
 
-        //public async Task<ProductDtoResponse> GetProductByID(int id)
-        //{
-        //    try
-        //    {
-        //        var product = (await _unitOfWork.ProductRepository.GetAsync(filter: p => p.ProductId == id, includeProperties: "Category")).FirstOrDefault();
-        //        if (product != null)
-        //        {
-        //            var productView = _mapper.Map<ProductDtoResponse>(product);
-        //            var productImages = await _unitOfWork.ProductImageRepository.GetAsync(p => p.ProductId == product.ProductId);
-        //            if (productImages.Any())
-        //            {
-        //                foreach (var image in productImages)
-        //                {
-        //                    var imageView = new ProductImageView
-        //                    {
-        //                        Base64StringImage = image.ImagePath
-        //                    };
-        //                    productView.Images.Add(imageView);
-        //                }
-        //            }
-        //            return productView;
-        //        }
-        //        else
-        //        {
-        //            return null;
-        //        }
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        throw new Exception(ex.Message);
-        //    }
+        public async Task<ProductDtoResponse> GetProductByID(int id)
+        {
+            try
+            {
+                var product = (await _unitOfWork.ProductRepository.GetAsync(filter: p => p.ProductId == id, includeProperties: "Category")).FirstOrDefault();
+                if (product != null)
+                {
+                    var productView = _mapper.Map<ProductDtoResponse>(product);
+                    var productImages = await _unitOfWork.ProductImageRepository.GetAsync(p => p.ProductId == product.ProductId);
+                    if (productImages.Any())
+                    {
+                        foreach (var image in productImages)
+                        {
+                            var imageView = new ProductImageView
+                            {
+                                Base64StringImage = image.ImagePath
+                            };
+                            productView.Images.Add(imageView);
+                        }
+                    }
+                    return productView;
+                }
+                else
+                {
+                    return null;
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
 
-        //}
+        }
 
-        //public async Task<List<ProductDtoResponse>> Search(string searchInput)
-        //{
-        //    try
-        //    {
-        //        var products = (await _unitOfWork.ProductRepository.FindAsync(p => searchInput != null && p.Name.Contains(searchInput))).ToList();
-        //        if (products.Any())
-        //        {
-        //            List<ProductDtoResponse> list = new List<ProductDtoResponse>();
-        //            foreach (var product in products)
-        //            {
-        //                var productView = _mapper.Map<ProductDtoResponse>(product);
-        //                var productImages = (await _unitOfWork.ProductImageRepository.GetAsync(p => p.ProductId == product.ProductId)).FirstOrDefault();
-        //                if (productImages != null)
-        //                {
-        //                    var imageView = new ProductImageView
-        //                    {
-        //                        Base64StringImage = productImages.ImagePath
-        //                    };
-        //                    productView.Images.Add(imageView);
-        //                }
-        //                list.Add(productView);
-        //            }
-        //            return list;
-        //        }
-        //        else
-        //        {
-        //            return null;
-        //        }
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        throw new Exception();
-        //    }
-        //}
+        public async Task<List<ProductDtoResponse>> Search(string searchInput)
+        {
+            try
+            {
+                var products = (await _unitOfWork.ProductRepository.FindAsync(p => searchInput != null && p.Name.Contains(searchInput))).ToList();
+                if (products.Any())
+                {
+                    List<ProductDtoResponse> list = new List<ProductDtoResponse>();
+                    foreach (var product in products)
+                    {
+                        var productView = _mapper.Map<ProductDtoResponse>(product);
+                        var productImages = (await _unitOfWork.ProductImageRepository.GetAsync(p => p.ProductId == product.ProductId)).FirstOrDefault();
+                        if (productImages != null)
+                        {
+                            var imageView = new ProductImageView
+                            {
+                                Base64StringImage = productImages.ImagePath
+                            };
+                            productView.Images.Add(imageView);
+                        }
+                        list.Add(productView);
+                    }
+                    return list;
+                }
+                else
+                {
+                    return null;
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception();
+            }
+        }
 
         //public async Task<int> StatusProduct(int id)
         //{
