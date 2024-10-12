@@ -75,8 +75,8 @@ namespace Services.Services.Implement
         {
             using (var transaction = await _unitOfWork.BeginTransactionAsync())
             {
-                //try
-                //{
+                try
+                {
                     var checkProduct = await _unitOfWork.ProductRepository.GetByIDAsync(id);
                     if (checkProduct != null)
                     {
@@ -98,13 +98,13 @@ namespace Services.Services.Implement
                     {
                         return false;
                     }
-                //}
-                //catch (Exception ex)
-                //{
-                //    await transaction.RollbackAsync();
-                //    throw new Exception(ex.Message);
-                //}
             }
+                catch (Exception ex)
+                {
+                await transaction.RollbackAsync();
+                throw new Exception(ex.Message);
+            }
+        }
         }
 
         public async Task<List<ProductDtoResponse>> GetAllProducts(int CategoryId)
@@ -220,117 +220,117 @@ namespace Services.Services.Implement
             }
         }
 
-        //public async Task<int> StatusProduct(int id)
-        //{
-        //    try
-        //    {
+        public async Task<int> StatusProduct(int id)
+        {
+            try
+            {
 
-        //        var checkProduct = await _unitOfWork.ProductRepository.GetByIDAsync(id);
-        //        if (checkProduct != null)
-        //        {
-        //            if (checkProduct.Status == 1)
-        //            {
-        //                checkProduct.Status = 0;
-        //                await _unitOfWork.ProductRepository.UpdateAsync(checkProduct);
-        //                await _unitOfWork.SaveAsync();
-        //                return 1;
-        //            }
-        //            else if (checkProduct.Status == 0)
-        //            {
-        //                if (checkProduct.Quantity == 0)
-        //                {
-        //                    return 2;
-        //                }
-        //                checkProduct.Status = 1;
-        //                await _unitOfWork.ProductRepository.UpdateAsync(checkProduct);
-        //                await _unitOfWork.SaveAsync();
-        //                return 1;
-        //            }
-        //            else
-        //            {
-        //                return 0;
-        //            }
+                var checkProduct = await _unitOfWork.ProductRepository.GetByIDAsync(id);
+                if (checkProduct != null)
+                {
+                    if (checkProduct.Status == 1)
+                    {
+                        checkProduct.Status = 0;
+                        await _unitOfWork.ProductRepository.UpdateAsync(checkProduct);
+                        await _unitOfWork.SaveAsync();
+                        return 1;
+                    }
+                    else if (checkProduct.Status == 0)
+                    {
+                        if (checkProduct.Quantity == 0)
+                        {
+                            return 2;
+                        }
+                        checkProduct.Status = 1;
+                        await _unitOfWork.ProductRepository.UpdateAsync(checkProduct);
+                        await _unitOfWork.SaveAsync();
+                        return 1;
+                    }
+                    else
+                    {
+                        return 0;
+                    }
 
-        //        }
-        //        else
-        //        {
-        //            return 0;
-        //        }
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        throw new Exception(ex.Message);
-        //    }
+                }
+                else
+                {
+                    return 0;
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
 
-        //}
+            //}
 
-        //public async Task<(bool check, List<string>? oldImagePaths)> UpdateProduct(ProductDtoRequest request, List<string> imagePaths, int id)
-        //{
-        //    using (var transaction = await _unitOfWork.BeginTransactionAsync())
-        //    {
-        //        try
-        //        {
-        //            bool status = false;
-        //            var checkCategory = _unitOfWork.CategoryRepository.GetByIDAsync(request.CategoryId);
-        //            if (checkCategory != null)
-        //            {
-        //                var checkProduct = await _unitOfWork.ProductRepository.GetByIDAsync(id);
-        //                if (checkProduct != null)
-        //                {
-        //                    var product = _mapper.Map(request, checkProduct);
-        //                    await _unitOfWork.ProductRepository.UpdateAsync(product);
-        //                    await _unitOfWork.SaveAsync();
-        //                    var currentImagePaths = new List<string>();
+            //public async Task<(bool check, List<string>? oldImagePaths)> UpdateProduct(ProductDtoRequest request, List<string> imagePaths, int id)
+            //{
+            //    using (var transaction = await _unitOfWork.BeginTransactionAsync())
+            //    {
+            //        try
+            //        {
+            //            bool status = false;
+            //            var checkCategory = _unitOfWork.CategoryRepository.GetByIDAsync(request.CategoryId);
+            //            if (checkCategory != null)
+            //            {
+            //                var checkProduct = await _unitOfWork.ProductRepository.GetByIDAsync(id);
+            //                if (checkProduct != null)
+            //                {
+            //                    var product = _mapper.Map(request, checkProduct);
+            //                    await _unitOfWork.ProductRepository.UpdateAsync(product);
+            //                    await _unitOfWork.SaveAsync();
+            //                    var currentImagePaths = new List<string>();
 
-        //                    var currentImages = await _unitOfWork.ProductImageRepository.GetAsync(p => p.ProductId == checkProduct.ProductId);
-        //                    if (currentImages.Any())
-        //                    {
-        //                        foreach (var image in currentImages)
-        //                        {
-        //                            await _unitOfWork.ProductImageRepository.DeleteAsync(image);
-        //                            await _unitOfWork.SaveAsync();
-        //                            currentImagePaths.Add(image.ImagePath);
-        //                        }
-        //                    }
+            //                    var currentImages = await _unitOfWork.ProductImageRepository.GetAsync(p => p.ProductId == checkProduct.ProductId);
+            //                    if (currentImages.Any())
+            //                    {
+            //                        foreach (var image in currentImages)
+            //                        {
+            //                            await _unitOfWork.ProductImageRepository.DeleteAsync(image);
+            //                            await _unitOfWork.SaveAsync();
+            //                            currentImagePaths.Add(image.ImagePath);
+            //                        }
+            //                    }
 
-        //                    if (imagePaths.Any())
-        //                    {
-        //                        foreach (var imagePath in imagePaths)
-        //                        {
-        //                            if (!String.IsNullOrEmpty(imagePath))
-        //                            {
-        //                                var image = new ProductImage
-        //                                {
-        //                                    ProductId = checkProduct.ProductId,
-        //                                    ImagePath = imagePath
-        //                                };
-        //                                await _unitOfWork.ProductImageRepository.InsertAsync(image);
-        //                                await _unitOfWork.SaveAsync();
-        //                            }
-        //                        }
-        //                    }
+            //                    if (imagePaths.Any())
+            //                    {
+            //                        foreach (var imagePath in imagePaths)
+            //                        {
+            //                            if (!String.IsNullOrEmpty(imagePath))
+            //                            {
+            //                                var image = new ProductImage
+            //                                {
+            //                                    ProductId = checkProduct.ProductId,
+            //                                    ImagePath = imagePath
+            //                                };
+            //                                await _unitOfWork.ProductImageRepository.InsertAsync(image);
+            //                                await _unitOfWork.SaveAsync();
+            //                            }
+            //                        }
+            //                    }
 
-        //                    status = true;
-        //                    await transaction.CommitAsync();
-        //                    return (status, currentImagePaths);
-        //                }
-        //                else
-        //                {
-        //                    return (status, null);
-        //                }
-        //            }
-        //            else
-        //            {
-        //                return (status, null);
-        //            }
+            //                    status = true;
+            //                    await transaction.CommitAsync();
+            //                    return (status, currentImagePaths);
+            //                }
+            //                else
+            //                {
+            //                    return (status, null);
+            //                }
+            //            }
+            //            else
+            //            {
+            //                return (status, null);
+            //            }
 
-        //        }
-        //        catch (Exception ex)
-        //        {
-        //            await transaction.RollbackAsync();
-        //            throw new Exception(ex.Message);
-        //        }
-        //    }
-        //}
-    }
+            //        }
+            //        catch (Exception ex)
+            //        {
+            //            await transaction.RollbackAsync();
+            //            throw new Exception(ex.Message);
+            //        }
+            //    }
+            //}
+        }
 }
