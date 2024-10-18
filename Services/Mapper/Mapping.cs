@@ -13,6 +13,15 @@ namespace Services.Mapper
     {
         public Mapping()
         {
+            CreateMap<Product, ProductDtoResponse>().ReverseMap();
+            CreateMap<Product, ProductDtoRequest>().ReverseMap();
+            CreateMap<Category, CategoryDtoResponse>().ReverseMap();
+            CreateMap<Category, CategoryDtoRequest>().ReverseMap();
+            CreateMap<Customer, CustomerDtoResponse>().ReverseMap();
+            CreateMap<Customer, CustomerDtoRequest>().ReverseMap();
+            CreateMap<CartItem, CartItemDtoRequest>().ReverseMap();
+            CreateMap<CartItem, CartItemDtoResponse>().ReverseMap();
+            CreateMap<Customer, UpdateCustomerDtoRequest>().ReverseMap();
             CreateMap<ChatRequest, MessageDtoRequest>().ReverseMap();
             CreateMap<ChatRequest, MessageDtoResponse>().ReverseMap();
             CreateMap<Order, OrderDtoResponse>().ReverseMap();
