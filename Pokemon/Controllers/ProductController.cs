@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Repository.Models;
 using Services.ModelView;
+using Services.Service.Interface;
 using Services.Services.Interface;
 
 namespace Pokemon.Controllers
@@ -12,14 +13,14 @@ namespace Pokemon.Controllers
     public class ProductController : ControllerBase
     {
         private readonly IProductService _productService;
-        //private readonly ICategoryService _categoryService;
+        private readonly ICategoryService _categoryService;
         private readonly string _imagesDirectory;
         private readonly IMapper _mapper;
 
-        public ProductController(IProductService productService,/* ICategoryService categoryService,*/ IWebHostEnvironment env, IMapper mapper)
+        public ProductController(IProductService productService, ICategoryService categoryService, IWebHostEnvironment env, IMapper mapper)
         {
             _productService = productService;
-            //_categoryService = categoryService;
+            _categoryService = categoryService;
             _imagesDirectory = Path.Combine(env.ContentRootPath, "img", "product");
             _mapper = mapper;
         }
@@ -29,10 +30,10 @@ namespace Pokemon.Controllers
         {
             try
             {
-                //if (await _categoryService.GetCategoryById(productView.CategoryId) == null)
-                //{
-                //    return BadRequest("Category not found");
-                //}
+                if (await _categoryService.GetCategoryById(productView.CategoryId) == null)
+                {
+                    return BadRequest("Category not found");
+                }
                 if (productView.Name == null)
                 {
                     return BadRequest("Name is required");
@@ -164,8 +165,61 @@ namespace Pokemon.Controllers
             }
         }
 
+        [HttpPut("/api/v1/product/{id}")]
+        public async Task<IActionResult> UpdateProduct([FromBody] ProductDtoRequest productView, int id)
+        {
+            if (await _categoryService.GetCategoryById(productView.CategoryId) == null)
+            {
+                return BadRequest("Category not found");
+            }
+            if (productView.Name == null)
+            {
+                return BadRequest("Name is required");
+            }
+            if (productView.Description == null)
+            {
+                return BadRequest("Description is required");
+            }
+            var imagePaths = new List<string>();
+            if (productView.Images.Any())
+            {
+                foreach (var image in productView.Images)
+                {
+                    if (!String.IsNullOrEmpty(image.Base64StringImage))
+                    {
+                        byte[] imageBytes = Convert.FromBase64String(image.Base64StringImage);
+                        string filename = $"ProductImage_{Guid.NewGuid()}.png";
+                        string imagePath = Path.Combine(_imagesDirectory, filename);
+                        System.IO.File.WriteAllBytes(imagePath, imageBytes);
+                        imagePaths.Add(filename);
+                    }
+                }
+            }
+            var checkSuccess = await _productService.UpdateProduct(productView, imagePaths, id);
+            if (checkSuccess.check && checkSuccess.oldImagePaths != null)
+            {
+                if (checkSuccess.oldImagePaths.Any())
+                {
+                    foreach (var oldImagePath in checkSuccess.oldImagePaths)
+                    {
+                        var fullImagePath = Path.Combine(_imagesDirectory, oldImagePath);
+                        if (System.IO.File.Exists(fullImagePath))
+                        {
+                            System.IO.File.Delete(fullImagePath);
+                        }
+                    }
+                }
+            }
+            if (checkSuccess.check)
+            {
+                return Ok("Update successful");
+            }
+            else
+            {
+                return BadRequest("Update fail");
+            }
+        }
 
-       
         [HttpPut("/api/v1/product/setStatus/{id}")]
         public async Task<IActionResult> UpdateStatusProduct(int id)
         {
