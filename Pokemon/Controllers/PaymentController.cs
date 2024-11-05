@@ -21,7 +21,7 @@ namespace Pokemon.Controllers
         {
             try
             {
-                string appScheme = "rolexauthorizedstore";
+                string appScheme = "pokemonshop";
 
                 if (parameters.vnp_BankTranNo == null)
                 {

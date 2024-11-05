@@ -30,7 +30,7 @@ namespace Repository.Models
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer("Server=(local); Database=PokemonStoreDB; User Id=sa; password=12345; MultipleActiveResultSets=True; Encrypt=True; TrustServerCertificate=True;");
+                optionsBuilder.UseSqlServer("Server=(local);Database=PokemonStoreDB;Uid=sa;Pwd=12345;TrustServerCertificate=True");
             }
         }
 
