@@ -107,7 +107,7 @@ namespace Services.Services.Implement
         }
         }
 
-        public async Task<List<ProductDtoResponse>> GetAllProducts(int CategoryId)
+        public async Task<List<ProductDtoResponse>> GetAllProducts(int CategoryId, string? sortBy, string? sortOrder)
         {
             try
             {
@@ -119,6 +119,20 @@ namespace Services.Services.Implement
                 else
                 {
                     products = (await _unitOfWork.ProductRepository.GetAsync(p => p.Status == 1 && p.CategoryId == CategoryId)).ToList();
+                }
+
+                if (!string.IsNullOrEmpty(sortBy))
+                {
+                    bool descending = sortOrder?.Equals("desc", StringComparison.OrdinalIgnoreCase) ?? false;
+
+                    if (sortBy.Equals("Price", StringComparison.OrdinalIgnoreCase))
+                    {
+                        products = descending ? products.OrderByDescending(p => p.Price).ToList() : products.OrderBy(p => p.Price).ToList();
+                    }
+                    else if (sortBy.Equals("Quantity", StringComparison.OrdinalIgnoreCase))
+                    {
+                        products = descending ? products.OrderByDescending(p => p.Quantity).ToList() : products.OrderBy(p => p.Quantity).ToList();
+                    }
                 }
                 if (products.Any())
                 {

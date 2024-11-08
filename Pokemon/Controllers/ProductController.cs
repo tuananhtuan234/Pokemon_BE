@@ -75,9 +75,9 @@ namespace Pokemon.Controllers
         }
 
         [HttpGet("/api/v1/Products")]
-        public async Task<IActionResult> GetAllProduct([FromQuery] int CategoryId)
+        public async Task<IActionResult> GetAllProduct([FromQuery] int CategoryId, [FromQuery] string? sortBy, [FromQuery] string? sortOrder)
         {
-            var products = await _productService.GetAllProducts(CategoryId);
+            var products = await _productService.GetAllProducts(CategoryId, sortBy, sortOrder);
             if (products != null)
             {
                 foreach (var product in products)

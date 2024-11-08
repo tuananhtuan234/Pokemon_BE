@@ -119,7 +119,7 @@ namespace RolexApplication_Backend.Controllers
             }
         }
 
-        [HttpPut("api/v1/[controller]/Quantity")]
+        [HttpPut("Quantity")]
         public async Task<IActionResult> UpdateItemQuantityInCart([FromQuery] int CartId, [FromQuery] int Quantity)
         {
             try

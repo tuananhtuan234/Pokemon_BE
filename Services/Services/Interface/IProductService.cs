@@ -13,7 +13,7 @@ namespace Services.Services.Interface
         Task<bool> AddNewProduct(Product product, List<string> imagePaths);
         Task<bool> DeleteProduct(int id);
 
-        Task<List<ProductDtoResponse>> GetAllProducts(int CategoryId);
+        Task<List<ProductDtoResponse>> GetAllProducts(int CategoryId, string? sortBy, string? sortOrder);
 
         Task<(bool check, List<string>? oldImagePaths)> UpdateProduct(ProductDtoRequest request, List<string> imagePaths, int id);
         Task<ProductDtoResponse> GetProductByID(int id);
